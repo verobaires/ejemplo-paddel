@@ -1,0 +1,20 @@
+// variables
+@import './utilities/variables';
+// estilos globales
+@import './utilities/globals';
+// utilidades
+@import './utilities/extend';
+@import './utilities/mixin';
+// nav
+@import './components/header';
+// main
+@import './pages/main-index';
+@import './pages/main-contacto';
+@import './pages/main-paletas';
+@import './pages/main-servicios';
+@import './pages/main-nosotros';
+@import './pages/main-404';
+// footer
+@import './components/footer';
+//media-queries
+@import './utilities/media-queries';

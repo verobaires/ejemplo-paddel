@@ -1,0 +1,184 @@
+/* ----- media query ----- */
+/* tablet */
+
+@media (min-width: 768px) {
+    /* navbar style */
+    header {
+        .nav {
+            flex-grow: 0;
+            position: unset;
+            background-color: transparent;
+            transition: 0s;
+            z-index: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+    /* index style */
+    .main-index {
+        .container {
+            .cont-row {
+                text-align: justify;
+            }
+        }
+        .button-paletas{
+            a {
+                padding: 10px 25px;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    /* contacto style */
+    .main-contacto {
+        .contacto {
+            justify-content: center;
+            align-items: center;
+            &__form {
+                .form {
+                    border-radius: 10px;
+                }
+            }
+            &__ubi {
+                iframe {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    /* paletas style */
+    .main-paletas {
+        .grilla {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    /* nosotros style */
+    .main-nosotros {
+        .nosotros {
+            width: 70%;
+            &__cont {
+                text-align: start;
+                h3 {
+                    font-size: 2.4rem;
+                    text-align: center;
+                }
+                p {
+                    font-size: 1.6rem;
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* footer style */
+    footer {
+        .footer {
+            padding: 10px 0;
+            &__nav {
+                display: block;
+            }
+        }
+        .footer__box {
+            padding: 0;
+            h3 {
+                padding: 0;
+                padding-bottom: 10px;
+            }
+            h4 {
+                a {
+                    display: none;
+                }
+            }
+        }
+    }    
+}
+
+/* ----- media query ----- */
+/* desktop */
+
+@media (min-width: 1024px) {
+
+    /* contacto style */
+    .main-contacto {
+        .contacto {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: start;
+            &__form {
+                h2 {
+                    text-align: start;
+                    width: 520px;
+                }
+                p {
+                    text-align: start;
+                    width: 520px;
+                }
+                .form {
+                    border-radius: 10px;
+                }
+            }
+            &__ubi {
+                text-align: start;
+                iframe {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    /* paletas style */
+    .main-paletas {
+        .grilla {
+            grid-template-columns: repeat(4, 1fr);
+            width: 75%;
+            gap: 40px 5px;
+            &__cont {
+                img {
+                    width: 180px;
+                }
+            }
+        }
+    }
+
+    /* servicios style */
+    .main-servicios {
+        .container {
+            .servicios {
+                div {
+                    div {
+                        .servicios__info {
+                            padding: 0 30px;
+                            width: 70%;
+                            p{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                    .servicios__cont {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+                    }
+                }
+            }
+        }
+    }
+
+    /* nosotros style */
+    .main-nosotros {
+        .nosotros {
+            width: 50%;
+            &__cont {
+                h3 {
+                    text-align: start;
+                }
+                p {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}

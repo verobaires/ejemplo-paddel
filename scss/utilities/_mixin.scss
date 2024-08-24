@@ -1,0 +1,16 @@
+// mixin
+@mixin flex ($flex-directon, $justyfy-content, $aling-tems: null) {
+    display: flex;
+    flex-direction: $flex-directon;
+    justify-content: $justyfy-content;
+    @if $aling-tems != null {
+        align-items: $aling-tems;
+    }
+};
+
+@mixin grid ($colums, $rows, $row-gap) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    row-gap: $row-gap;
+};

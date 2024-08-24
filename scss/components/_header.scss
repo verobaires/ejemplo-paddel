@@ -1,0 +1,52 @@
+/* navbar style */
+header {
+    .navbar {
+        padding: 0;
+        .container-fluid {
+            justify-content: space-around;
+            background-color: $bg-color-main;
+            padding: 7px 0;
+            img {
+                width: 60px;
+            }
+            button {
+                border: none;
+                &:focus {
+                box-shadow: none;
+                }
+                span {
+                    background-image: url(./../assets/img/logos-icons/menu-hamburguesas.png);
+                    width: 35px;
+                }
+            }
+        }
+    }
+    .nav {
+        position: absolute;
+        width: 30%;
+        top: 74px;
+        right: 0;
+        background-color: $bg-color-main;
+        transition: .6s;
+        z-index: 10;
+        border-bottom-left-radius: 10px;
+        justify-content: center;
+        &__ul {
+            --bs-nav-link-hover-color: #eee;
+            gap: 5px;
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                a {
+                    @extend %estilos-enlace;
+                    color: $text-color-white;
+                    transition: transform .25s;
+                    &:hover {
+                        color: $text-color-link-primary;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+// extend 
+%estilos-btn-main {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+};
+
+%estilos-enlace {
+    text-decoration: none;
+    font-size: 1.4rem;
+};
+
+%estilos-sombreado {
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px 0px #222;
+};
+
+%estilos-titulo {
+    text-align: center;
+    margin: 40px 0;
+    padding: 5px 0;
+    color: $text-color-black;
+};
+
+%estilos-btn-compra {
+    text-decoration: none;
+    color: $text-color-white;
+    background-color: $bg-color-main;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px;
+    width: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+};
